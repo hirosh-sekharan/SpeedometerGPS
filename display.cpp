@@ -2,6 +2,10 @@
 
 #include <lvgl.h>
 
+#if LVGL_VERSION_MAJOR != 8 || LVGL_VERSION_MINOR != 3
+#error "This project requires LVGL 8.3.x (8.3.11). Install it via Library Manager -> lvgl -> version 8.3.11. LVGL 9 is NOT compatible with the SquareLine export."
+#endif
+
 #include "LGFX_CYD.hpp"
 #include "config.h"
 

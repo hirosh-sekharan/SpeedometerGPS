@@ -2,6 +2,8 @@
 
 #include <lvgl.h>
 
+#include <cstdio>
+
 #include "app_state.h"
 #include "config.h"
 #include "dashboard.h"

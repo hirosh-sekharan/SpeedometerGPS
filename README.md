@@ -59,7 +59,7 @@ Put the GPS antenna where it can see open sky, and keep it a few cm away from th
 1. Install the ESP32 board package and select **ESP32 Dev Module**.
 2. Set Tools → Partition Scheme → **Huge APP (3MB No OTA)**. The images and fonts are large.
 3. Install these libraries:
-   - **lvgl**: exactly **8.3.11** (SquareLine generated the UI for this version; v9 will not compile)
+   - **lvgl**: exactly **8.3.11** (SquareLine generated the UI for this version; v9 will not compile). If the IDE offers to update lvgl, **decline**: an update to v9 breaks the build.
    - **LovyanGFX**: a recent 1.1.x or newer
    - **TinyGPSPlus** by Mikal Hart
 4. Copy `lv_conf.h` to your Arduino `libraries/` folder, **next to** the `lvgl` folder (not inside it):
